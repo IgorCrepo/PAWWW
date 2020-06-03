@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="pl">
+<head>
+    <meta charset="UTF-8">
+    <title>Centrum Motoryzacji</title>
+    <link rel="stylesheet" href="styl.css">
+    <script defer src="form_check.js"></script>
+    <meta name="Igor Ciuciura" content="Motoryzacja">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://fonts.googleapis.com/css?family=Asap&display=swap" rel="stylesheet">
+</head>
+<body>
+
+<header>
+    <a href="index.html">
+        <img src="grafiki/logo2.jpg" id="logo2" alt ="">
+        <img src="grafiki/logo_male.jpg" id="logo_male" alt ="">
+    </a>
+
+</header>
+
+<nav id="nav_menubar_main">
+    <div id="menu_bar_div">
+        <ul id="menu_bar_1">
+            <li><a href="index.html"><u>STRONA GŁÓWNA</u></a></li>
+            <li><a href="marki.html">MARKI</a></li>
+            <li><a href="sprzedaz.html">SPRZEDAŻ</a></li>
+            <li><a href="#">KONTAKT</a></li>
+        </ul>
+    </div>
+</nav>
+
+<section>
+
+
+    <article id = "article_main">
+
+        <h1 class ="header_1_main">FORMULARZ KONTAKTOWY</h1>
+        <hr class = "hr_main_main" >
+        <img id="samochodzik" src="grafiki/samochodzik.png" alt="">
+
+
+        <div id="error"></div>
+
+        <form class="myform" action ="kontakt.html" method="GET" id="form">
+            <div class="formDiv">
+                <label for="f_imie">Imię:</label>
+                <input placeholder="Anna" id="f_imie" name="f_imie">
+                <div id="e_imie" class="errorMsg"></div>
+            </div>
+            <div class="formDiv">
+                <label for="f_email">Email:</label>
+                <input placeholder="anna@onet.pl" id="f_email" name="f_email">
+                <div id="e_email" class="errorMsg"></div>
+            </div>
+            <div class="formDiv">
+                <label for="f_adres">Miasto:</label>
+                <input placeholder="Olsztyn" id="f_adres" name="f_adres">
+                <div id="e_adres" class="errorMsg"></div>
+            </div>
+            <div class="formDiv">
+                <label for="f_kod">Kod pocztowy:</label>
+                <input placeholder="11-600" id="f_kod" name="f_kod">
+                <div id="e_kod" class="errorMsg"></div>
+            </div>
+            <div class="formDiv">
+                <label for="f_text">Wiadomość:</label>
+                <textarea rows="5" placeholder="Treść..." id="f_text" name="f_text"></textarea>
+                <div id="e_text" class="errorMsg"></div>
+            </div>
+            <div style="text-align: center; width: 70%; padding-top: 20px; margin: auto">
+                <input type="submit" value="Wyślij" class="formButton">
+            </div>
+
+        </form>
+
+    </article>
+
+    <aside id = "aside_main">
+        <h3 id = "header_video">NAJPOPULARNIEJSZE WIDEO W INTERNECIE</h3>
+        <hr class ="hr_main_main" >
+
+        <iframe class = "wideo_main_frame" src="https://www.youtube.com/embed/m7MtIv9a0A4"  allowfullscreen></iframe>
+        <hr class="hr_main_wideo">
+        <iframe class = "wideo_main_frame"  src="https://www.youtube.com/embed/tasWKXhghxs" allowfullscreen></iframe>
+        <hr class="hr_main_wideo">
+        <iframe class = "wideo_main_frame"  src="https://www.youtube.com/embed/0STeATQ9N10" allowfullscreen></iframe>
+        <hr class="hr_main_wideo">
+        <iframe class = "wideo_main_frame"  src="https://www.youtube.com/embed/0z3iVyjr6Ek" allowfullscreen></iframe>
+        <hr class="hr_main_wideo">
+        <iframe class = "wideo_main_frame"  src="https://www.youtube.com/embed/ngLQfhJZ7Rs"allowfullscreen></iframe>
+
+    </aside>
+</section>
+
+<footer>
+    Stopka
+</footer>
+
+</body>
+</html>
